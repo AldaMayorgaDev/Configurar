@@ -1,0 +1,29 @@
+Configuracion de VsCode
+
+Configuración de PATH con oh-my-zsh
+
+For MacOS, search for VSCode application for e.g. it was in my Downloads section.
+Now copy that to Applications folder and then run following commands.
+	•	Open terminal and type vi ~/.zshrc
+	•	Add this line in the end (If not empty) export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+	•	Press command+Q (in short quit the terminal)
+	•	Again open up terminal and go to git code folders
+You are all sorted now. Thanks
+
+https://stackoverflow.com/questions/29955500/code-not-working-in-command-line-for-visual-studio-code-on-osx-mac
+
+
+Configuración de Terminal .- Quita el nombre del equipo y el usuario
+
+Solo necesito modificar~/.zshrc
+
+	•	Ocultar nombre de usuario y nombre de host:
+prompt_context() {}
+
+	•	Conserve solo el nombre de usuario, oculte el nombre de host:  prompt_context() {if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then prompt_segment black default "%(!.%{%F{yellow}%}.)$USER" fi} 
+https://programmerclick.com/article/62711329525/
+
+
+
+Configuración de terminal en VSCODE
+https://blog.zhaytam.com/2019/04/19/powerline-and-zshs-agnoster-theme-in-vs-code/
